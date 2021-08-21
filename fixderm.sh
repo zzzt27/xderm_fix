@@ -18,8 +18,8 @@ rm "${xderm}"
 rm "${index}"
 echo -e "downloading..."
 sleep 2
-wget -O "${www}/index.php" --no-check-certificate https://raw.githubusercontent.com/zzzt27/xderm_fix/main/index.php
-wget -O "${www}/xderm-mini" --no-check-certificate https://raw.githubusercontent.com/zzzt27/xderm_fix/main/xderm-mini
+wget -O "${www}/xderm/index.php" --no-check-certificate https://raw.githubusercontent.com/zzzt27/xderm_fix/main/index.php
+wget -O "${www}/xderm/xderm-mini" --no-check-certificate https://raw.githubusercontent.com/zzzt27/xderm_fix/main/xderm-mini
 chmod +x "${xderm}"
 chmod +x "${index}"
 clear
