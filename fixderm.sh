@@ -7,8 +7,8 @@ fi
 HOME="/root"
 profil="${HOME}/profiles"
 WWW="/www/xderm"
-index="${www}/index.php"
-xderm="${www}/xderm-mini"
+index="${www}/xderm/index.php"
+xderm="${www}/xderm/xderm-mini"
 echo -e "buat folder profile"
 sleep 2
 mkdir -p "${profil}"
