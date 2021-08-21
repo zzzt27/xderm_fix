@@ -14,13 +14,13 @@ sleep 2
 mkdir -p "${profil}"
 echo -e "hapus file lama"
 sleep 2
-rm "${xderm}"
-rm "${index}"
+rm /www/xderm/index.php
+rm /www/xderm/xderm-mini
 echo -e "downloading..."
 sleep 2
-wget -O "${www}/xderm/index.php" --no-check-certificate https://raw.githubusercontent.com/zzzt27/xderm_fix/main/index.php
-wget -O "${www}/xderm/xderm-mini" --no-check-certificate https://raw.githubusercontent.com/zzzt27/xderm_fix/main/xderm-mini
-chmod +x "${xderm}"
-chmod +x "${index}"
+wget -O /www/xderm/index.php --no-check-certificate https://raw.githubusercontent.com/zzzt27/xderm_fix/main/index.php
+wget -O /www/xderm/xderm-mini --no-check-certificate https://raw.githubusercontent.com/zzzt27/xderm_fix/main/xderm-mini
+chmod +x /www/xderm/xderm-mini
+chmod +x /www/xderm/index.php
 clear
 echo -e "done"
